@@ -13,9 +13,14 @@ combatStrength = int(input("Enter your combat strength (1-6): "))
 if combatStrength < 1 or combatStrength > 6:
     print("Invalid input ! Combat strenght should be between 1 and 6.")
     combatStrength = 1 #Default value for invalid input
+
+#Input combat strength for monster
+mCombatStrength = int(input("Enter monster's combat strength (1-6): "))
+if mCombatStrength < 1 or mCombatStrength > 6:
+    print("Invalid input ! Monster Combat strenght should be between 1 and 6.")
+    mCombatStrength = 1 #Default value for invalid input
+
     
-# combatStrength = max(1, min(6, int(input("Hero strength (1-6): "))))
-# mCombatStrength = max(1, min(6, int(input("Monster strength (1-6): "))))
 
 # # Battle
 # for j in range(1, 21, 2):
