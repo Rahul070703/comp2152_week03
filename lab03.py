@@ -40,3 +40,18 @@ for j in range(1, 21, 2): #simulation of 20 rounds, stepping by 2
     print(f"\nRound {j} Hero rolled {heroRoll}, Monster rolled {monsterRoll}")
     print(f"Hero selected {heroWeapon}, Monster selected {monsterWeapon}")
     print(f"Hero total strength: {heroTotal}, Monster total strength: {monsterTotal}")
+
+    #Determine winner
+    if heroTotal > monsterTotal:
+        print("Hero wins")
+    elif heroTotal < monsterTotal:
+        print("Monster wins")
+    else:
+        print("It's a tie")
+
+
+    if j == 11:
+        print("\n Battle truce declared in round 11. Game Over! ")
+    if j != 11:
+        print("\n Battle concluded in round 20. Game Over! ")
+        
